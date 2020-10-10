@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Vaishnav Akavaram; Assignment #5; HTML file-->
+<html>
+    <head>
+    	<style>
+            div{text-align: center; background-color: rgb(156,3,24); border: 2px solid black;}
+            body{background-color: salmon}
+            fieldset{border: 1px solid black;}
+            label{display: inline-block; text-align: center;}
+            input{display: inline-block; float: center;}
+            h1{text-align: center;}
+            table, td {border-collapse: collapse;}
+            .rgt{text-align: left;}
+            .lft{text-align: left;}
+            .wdt{width: 42%;}
+            #bttn{border: 2px solid green;}
+            a:hover{background-color: yellow}
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <img src="images/logo.png">
+        </div> 
+        <h1> Welcome To Tim Horton's </h1>
+        <form  action="http://akavaram.dev.fast.sheridanc.on.ca/SYST10199/assignment/assign5.php" method="POST">
+            <fieldset>
+                <legend>Customize Your Order Below</legend>
+                    <h3>Select your order: </h3>
+            <table> 
+                <tr><td class='lft'>Drink Type: </td><td class='rgt'><label>Coffee</label><input type="radio" id="drnks" value="Coffee" name="tDrinks" required>
+                <label>Tea </label><input type="radio" id="drnks" value="Tea" name="tDrinks"></td></tr> 
+                <tr><td class='lft'><label>Cup Size: </label></td>
+                <td class='rgt'><select id="cupSize" name="cSize" required>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="X-Large">X-Large</option>
+                </select></td></tr> 
+               
+                <tr><td class='lft'><label>Number of Drinks: </label></td> <td class='rgt'><input class="wdt" type="number" name="nDrinks" value="1" min="1"></td></tr>
+                <tr><td class='lft'><label>Amount of Sugar: </label></td> <td class='rgt'><input class="wdt" type="number" name="aSugar" value="0" min="0"></td></tr>
+                <tr><td class='lft'><label>Amount of Sweetener: </label></td> <td class='rgt'><input class="wdt" type="number" name="aSweetener" value="0" min="0"></td></tr>
+                <tr><td class='lft'><label>Amount of Cream: </label></td> <td class='rgt'><input type="number" class="wdt" name="aCream" value="0" min="0"></td></tr>
+                <tr><td class='lft'><label>Amount of Milk: </label></td> <td class='rgt'><input type="number" class="wdt" name="aMilk" value="0" min="0"></td></tr>
+                <tr><td colspan="2"><input id="bttn" type="submit" name="submt" value="Place an Order"></td></tr>
+            </table>
+                <br>
+                <a href="price.html">Click this link to check the prices!</a>
+            </fieldset>
+        </form>
+        <br>
+         <div id="bttm">
+            <img src="images/logo2.jpg">
+         </div> 
+    </body>
+</html>
